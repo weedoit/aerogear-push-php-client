@@ -14,9 +14,15 @@ use AeroGear\Client,
 
 $yourServerURL = 'YOUR_SERVER_URL';
 $message = new Message('Your awesome message.');
+$options = [
+    // Your options
+];
 
 $client = new Client($yourServerURL);
 $client->setApplicationId('YOUR_APP_ID');
 $client->setMasterSecret('YOUR_APP_MASTER_SECRET');
 $client->send($message);
 ```
+
+#### Documentation
+For more infos check `doc` directory
